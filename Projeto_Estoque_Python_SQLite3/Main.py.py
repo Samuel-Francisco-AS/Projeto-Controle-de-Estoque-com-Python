@@ -44,9 +44,9 @@ while True:
     elif opcao == "3":
         produtos = listar_produtos()
 
-    if not produtos:
+        if not produtos:
             print("Nenhum produto cadastrado.")
-    else:
+        else:
             print("\n=== PRODUTOS CADASTRADOS ===")
             for p in produtos:
                 status = "Promoção" if p["promocao"] else "Normal"

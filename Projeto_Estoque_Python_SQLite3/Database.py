@@ -78,19 +78,6 @@ def listar_produtos():
     conexao.close()
     return produtos
 
-def listar_produtos():
-    conexao = conectar()
-    cursor = conexao.cursor()
-
-    cursor.execute("""
-        SELECT nome, preco, quantidade, promocao
-        FROM produtos
-    """)
-
-    produtos = cursor.fetchall()
-    conexao.close()
-    return produtos
-
 # Esse bloco só roda quando o arquivo é executado diretamente
 if __name__ == "__main__":
     criar_tabela()

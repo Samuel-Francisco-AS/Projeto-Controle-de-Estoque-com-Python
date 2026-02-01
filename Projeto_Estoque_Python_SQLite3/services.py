@@ -6,12 +6,14 @@ def cadastrar_produto(nome, preco, quantidade, promocao):
 
 
 def calcular_desconto(preco, promocao):
+    desconto = 0
+
     if promocao:
-        return preco * 0.20
+        desconto = preco * 0.20
     elif preco >= 100:
-        return preco * 0.10
-    else:
-        return 0
+        desconto = max(desconto, preco * 0.20)
+
+    return desconto
 
 
 def consultar_produto(nome):
