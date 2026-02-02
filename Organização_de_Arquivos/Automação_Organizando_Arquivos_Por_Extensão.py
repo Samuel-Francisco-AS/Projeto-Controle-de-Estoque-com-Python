@@ -6,7 +6,7 @@ import shutil
 
 #Variável responsável por definir o caminho para a pasta que será organizada.
 #O prefixo "r" indica uma raw string -> Faz com que o python interprete a string de maneira literal, evitando o erro da "\".
-pasta_alvo = r"C:\Users\Desktop\Downloads"
+pasta_alvo = r"Caminho_da_Pasta_que_se_Deseja_Organizar"
 
 #Trecho responsável por listar tudo que há dentro da pasta alvo.
 #os.listdir() lista tudo que existe na pasta indicada.
